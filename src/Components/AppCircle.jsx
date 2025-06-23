@@ -13,9 +13,15 @@ const AppCircleStyle = styled.div`
     height: 30px;
     border-radius: 100%;
     border: 2px solid #48bbf176;
-    transition: transform 0.3s ease-out;
+    transition: transform 1.0s ease-out;
+    cursor: pointer;
+    /* z-index: -99; */
     /* background-color: #48bbf1; */
     /* box-shadow: 0 0 10px rgba(72, 188, 241, 0.5); */
+
+    &:active{
+        background-color: #48bbf1;
+    }
 `;
 
 export default AppCircle

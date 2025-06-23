@@ -3,6 +3,7 @@ import AppCircle from "../Components/AppCircle";
 import { useState } from "react";
 import '../App.css'
 import FullPageLayout from "../Components/FullPageLayout";
+import TopBar from "../Components/TopBar";
 
 
 function HomePage() {
@@ -17,9 +18,9 @@ function HomePage() {
 
     return (
         <HompePageStyle className="App" onMouseMove={handleMouseMove}>
-            <AppCircle x={position.x} y={position.y} />
+            {/* <AppCircle x={position.x} y={position.y} /> */}
             <FullPageLayout>
-                
+                <TopBar/>
             </FullPageLayout>
         </HompePageStyle>
     )
