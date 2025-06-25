@@ -4,27 +4,32 @@ import Navigation from "./Navigation";
 
 
 function TopBar() {
+
+    const getNavList = () => {
+        return [
+            {
+                path: "/",
+                text: "Home"
+            },
+            {
+                path: "/work",
+                text: "How It Work"
+            },
+            {
+                path: "/faq",
+                text: "FAQ"
+            },
+            {
+                path: "/pricing",
+                text: "Pricing"
+            },
+        ]
+    }
+
     return (
-        <TopBarStyle>
+        <TopBarStyle className="d-flex pt-5 ps-5 pe-5">
             <Logo text="Dash Box" />
-            <Navigation list={[
-                {
-                    path: "/",
-                    text: "Home"
-                },
-                {
-                    path: "/work",
-                    text: "How It Work"
-                },
-                {
-                    path: "/faq",
-                    text: "FAQ"
-                },
-                {
-                    path: "/pricing",
-                    text: "Pricing"
-                },
-            ]} />
+            <Navigation list={getNavList()} />
         </TopBarStyle>
     )
 }
