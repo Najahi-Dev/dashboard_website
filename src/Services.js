@@ -9,6 +9,7 @@ export const getColorSchemes = ()=>{
         color2: {
             backColor: "#181a1f",
             color: "#788199",
+            border: "#788199"
         },
         color3: {
             color: "#ffffff",
