@@ -1,10 +1,14 @@
 import styled from "styled-components";
+import FullPageLayout from "../Components/FullPageLayout";
+import TopBar from "../Components/TopBar";
 
 
 function FAQPage() {
     return (
         <FAQPageStyle>
-            FAQ Page
+            <FullPageLayout>
+                <TopBar/>
+            </FullPageLayout>
         </FAQPageStyle>
     )
 }

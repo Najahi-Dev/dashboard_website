@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import Navigation from "./Navigation";
 import Button from "./Button";
+import { getColorSchemes } from "../Services";
 
 
 function TopBar() {
@@ -31,13 +32,13 @@ function TopBar() {
         <TopBarStyle className="d-flex justify-content-between pt-5 ps-5 pe-5">
             <Logo text="Dash Box" />
             <Navigation list={getNavList()} />
-            <Button text="Login" buttonType="style-2"/>
+            <Button text="Login" buttonType="style-2" />
         </TopBarStyle>
     )
 }
 
 const TopBarStyle = styled.div`
-  
+
 `;
 
 export default TopBar
