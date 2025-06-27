@@ -30,7 +30,7 @@ function TopBar() {
 
     return (
         <TopBarStyle className="d-flex justify-content-between pt-5 ps-5 pe-5">
-            <Logo text="Dash Box" />
+            <Logo text="BOX FILER" />
             <Navigation list={getNavList()} />
             <Button text="Login" buttonType="style-2" />
         </TopBarStyle>
