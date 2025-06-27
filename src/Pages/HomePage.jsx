@@ -6,12 +6,34 @@ import FullPageLayout from "../Components/FullPageLayout";
 import TopBar from "../Components/TopBar";
 import Typography from "../Components/Typography";
 import Button from "../Components/Button";
-import { FaPlay } from "react-icons/fa";
+import { FaFileUpload, FaPlay, FaUserFriends } from "react-icons/fa";
 import Image from "../Components/Image";
 import image from "../assets/file_image.svg"
+import { PiFoldersLight } from "react-icons/pi";
+import { IconComboList } from "../Components/IconCombo";
 
 
 function HomePage() {
+
+    const getIconComboList = () => {
+        return[
+            {
+                icon: <FaUserFriends/>,
+                text1: "1M+",
+                text2: "active users"
+            },
+            {
+                icon: <PiFoldersLight />,
+                text1: "5TB+",
+                text2: "files stored"
+            },
+            {
+                icon: <FaFileUpload />,
+                text1: "6M+",
+                text2: "uploaded files"
+            },
+        ]
+    }
 
     const [position, setPosition] = useState({ x: 0, y: 0 });
 
@@ -29,7 +51,7 @@ function HomePage() {
                 <div className="body-container d-flex flex-grow-1 align-items-center">
                     <div className="col-lg-12 p-5 d-flex justify-content-center">
                         <div className="row">
-                            <div class="col-lg-6 col-md-12 ps-5 d-flex flex-column justify-content-center">
+                            <div class="col-lg-7 col-md-12 ps-5 d-flex flex-column justify-content-center">
                                 <Typography text="Organize your files and keep them safe, everywhere!" type="h1" className="col-lg-8 heading-1" />
 
                                 <Typography text="We offer secure storage, ensuring all your data is protected from unauthorized access." type="p" color="#788199" className="col-lg-8 mt-3" />
@@ -38,9 +60,10 @@ function HomePage() {
                                     <Button text="Get Started" buttonType="style-1" />
                                     <Button text="Request a Demo" buttonType="style-3" icon={<FaPlay />} className="me-3 gap-3" />
                                 </div>
+                                <IconComboList list={getIconComboList()} />
                             </div>
 
-                            <div class="col-lg-6 col-md-12 d-flex justify-content-center align-items-center mt-sm-5">
+                            <div class="col-lg-5 col-md-12 d-flex justify-content-center align-items-center mt-sm-5">
                                 <Image src={image} alt="file-image" xxlSize={"85%"} xlSize={"90%"} mdSize={"90%"} />
                             </div>
                         </div>
