@@ -16,7 +16,7 @@ function HowItWorksPage() {
                         <div className="col-lg-5 col-md-12 d-flex justify-content-center align-items-center mt-sm-5">
                             <Image src={image} xxlSize={"85%"} xlSize={"90%"} mdSize={"90%"} />
                         </div>
-                        <div class="col-lg-6 col-md-12 ps-5 mt-sm-5 d-flex flex-column justify-content-center">
+                        <div class="col-lg-7 col-md-12 ps-5 mt-sm-5 d-flex flex-column justify-content-center">
                             <Typography text="Organize Your Files" type="h2" className="col-lg-8" />
                             <Typography text="Our intutive file management system allows you to easily organize youur files with a few simple clicks. Create folders, subfolders and categorize your files to keep everything in order. Use tags and search functions to quickly find what you need." type="p" color="#788199" className="col-lg-12 mt-3" />
 
